@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 250px 1fr 300px;
+
+}
+
+#rating {
+    color: rgb(255, 213, 0);
+    background: black;
+    font-size: 14px;
+    padding: 7px;
+    border-radius: 5px;
+}
+
+#card-top {
+    display: flex;
+}
+
+#item-price,
+#n {
+    color: grey;
+    padding-top: 10px;
+}
+
+.fa-heart-o {
+    padding: 6px;
+    background: white;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.toggle-heart {
+    background: orange;
+    color: white;
+
+}
+
+.logo {
+    padding: 0 30px;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    margin-top: -20px;
+}
+
+#food-container {
+    background: rgb(234, 234, 239);
+    height: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+    box-sizing: content-box;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    padding-top: 40px;
+    z-index: 1;
+}
+
+#header .address {
+    font-size: 20px;
+}
+
+.your-address {
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: 1px solid indianred;
+    color: indianred;
+    width: 150px;
+    cursor: pointer;
+}
+
+.add-box i {
+    font-size: 20px;
+}
+
+.util i {
+    border-radius: 5px;
+    padding: 8px 10px;
+    border: 1px solid rgb(220, 38, 38);
+    color: rgb(235, 27, 27);
+    width: 95px;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.util i:active {
+    color: white;
+    background: red;
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#menu {
+    background-color: rgb(249, 245, 246);
+    height: 100%;
+}
+
+.menu-item a {
+    display: block;
+    font-size: 20px;
+    padding: 8px 30px;
+    margin: 12px 0;
+    color: rgb(25, 23, 23);
+    font-weight: 300;
+}
+
+.menu-item a:hover {
+    color: rgb(213, 11, 72);
+}
+
+
+
+#cart {
+    background-color: rgb(242, 243, 246);
+    height: 100%;
+}
+
+#item-card {
+    width: 250px;
+    height: 300px;
+    background-color: rgb(245, 196, 240);
+    display: inline-block;
+    border-radius: 5px;
+    padding: 30px;
+    white-space: nowrap;
+}
+
+#item-card:hover img {
+    transform: scale(1.2);
+}
+
+
+#item-name {
+    margin: 10px;
+    font-size: 35px;
+    color: coral;
+}
+
+
+
+#item-card img {
+    width: 140px;
+    height: 140px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    display: block;
+    margin: auto;
+    border-radius: 45%;
+    transition: 0.5s all ease-in-out;
+}
+
+#Chicken #item-card p,
+#Paneer #item-card p,
+#South-indian #item-card p,
+#Biryani #item-card p {
+    text-align: center;
+}
+
+#card-top {
+    display: flex;
+    justify-content: space-between;
+}
